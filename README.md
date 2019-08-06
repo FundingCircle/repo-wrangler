@@ -11,5 +11,8 @@ docker build -t repo-wrangler .
 ## Run
 
 ```shell
-docker run --rm -it -u `id -u`:`id -g` -v "$PWD":/work -w /work repo-wrangler ./main.rb
+export GITHUB_ORG=your_org_here
+export GITHUB_TOKEN=your_token_here
+
+docker run --rm -it -e GITHUB_ORG -e GITHUB_TOKEN repo-wrangler ./main.rb
 ```

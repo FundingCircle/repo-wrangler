@@ -1,2 +1,5 @@
+/artifacts/*
+!/artifacts/.keep
+
 /workspace/*
 !/workspace/.keep

@@ -12,3 +12,6 @@ group :development do
   # Language Server Protocol
   gem 'solargraph'
 end
+
+# Slack intergation
+gem 'slack-ruby-client'
